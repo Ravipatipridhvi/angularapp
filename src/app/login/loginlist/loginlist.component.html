@@ -1,0 +1,33 @@
+<div class="row" *ngIf="message!=''">
+  <div class="col-md-12">
+    <div class="alert alert-danger" role="alert">
+      {{message}}
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="loginbox">
+    <div class="row">
+      <div class="col-md-2">UserName</div>
+      <div class="col-md-10"><label>
+        <input [(ngModel)]="loginModel.username" type="text">
+      </label></div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">Password</div>
+      <div class="col-md-10"><label>
+        <input [(ngModel)]="loginModel.password" type="password">
+      </label></div>
+    </div>
+      <div class="row">
+        <div class="col-md-12"><button class="btn btn-success btn-sm" (click)="onSubmitClick()">login</button></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+

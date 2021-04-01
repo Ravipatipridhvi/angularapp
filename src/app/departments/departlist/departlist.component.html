@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-md-8"><h3>Department List</h3>
+  </div>
+  <div class="col-md-2"><button (click)="onAddDepartment()" class="btn btn-primary">Add Department</button>
+  </div>
+  <div class="col-md-2"><button (click)="doctors()" class="btn btn-primary">doctors</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2" *ngFor="let department of departlist">
+    <div class="productblock" (click)="onDepartmentsClick(department.name)" >
+      <div> {{department.name}}
+      </div>
+      <div >
+       <!-- <img src="{{department.logo}}" class="img-thumbnail deptlogo" >-->
+
+        <video class="img-thumbnail deptlogo" controls>
+          <source src="{{department.logo}}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div>
+        <b>HOD:</b>{{department.hod}}
+      </div>
+      <div>
+        <b>Timings:</b>{{department.timings}}
+      </div>
+      <div>
+        <b>Location:</b>{{department.location}}
+      </div>
+      <div>
+        <b>Description:</b>{{department.description  | slice:0:10}}
+      </div>
+      <div>
+        <button (click)= "onDelDepartment(department.id)" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
+          <button (click)= "onEditDepartment(department.id)" class="btn btn-primary btn-sm edit_icon"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+

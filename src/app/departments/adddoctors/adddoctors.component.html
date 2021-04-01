@@ -1,0 +1,23 @@
+
+<div class="row">
+    <div class="col-md-10"><h3>Add Doctors</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" [(ngModel)]="doctors.name" id="name">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <div class="form-group">
+            <label for="specialization">Specialization:</label>
+            <input type="text" class="form-control" [(ngModel)]="doctors.specialization" id="specialization">
+        </div>
+    </div>
+</div>
+<button type="submit" (click)="onSaveDept()" class="btn btn-primary">Submit</button>

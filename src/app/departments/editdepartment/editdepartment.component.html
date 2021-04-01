@@ -1,0 +1,55 @@
+
+<div class="row">
+    <div class="col-md-10"><h3>Edit Department</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" [(ngModel)]="deptModel.name" id="name">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <div class="form-group">
+            <label for="logo">Logo:</label>
+            <input type="text" class="form-control" [(ngModel)]="deptModel.logo" id="logo">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <div class="form-group">
+            <label for="hod">HOD:</label>
+            <input type="text" class="form-control" [(ngModel)]="deptModel.hod" id="hod">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <div class="form-group">
+            <label for="timings">Timings:</label>
+            <input type="text" class="form-control"[(ngModel)]="deptModel.timings" id="timings">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" class="form-control"[(ngModel)]="deptModel.description" id="description">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" class="form-control" [(ngModel)]="deptModel.location" id="location">
+        </div>
+    </div>
+</div>
+<button type="submit" (click)="onEditeDept()" class="btn btn-primary">Submit</button>

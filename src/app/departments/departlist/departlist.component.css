@@ -1,0 +1,24 @@
+.productblock{
+  border: 1px solid #805476;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 10px;
+  width: 100%;
+  height: 330px;
+}
+
+.productblock:hover {
+  background: #b5ffb9;
+  border: 1px solid #ff9974;
+}
+
+.deptlogo{
+  width:200px;
+  height: 140px;
+}
+
+.edit_icon{
+  margin-left: 5px;
+}
+
+

@@ -1,0 +1,41 @@
+.header{
+  text-align: center;
+  border: 1px solid grey;
+  height: 40px;
+  background: #439dff;
+  color: #f7f9fc;
+  font-size: 27px;
+}
+.footer{
+  text-align: center;
+  border: 1px solid #DBD4D1;
+  height: 40px;
+  background: #aca7a7;
+  color: #d9dde3;
+  font-size: 19px;
+}
+.bodycontent{
+  border: 1px solid #DBD4D1;
+  height: 500px;
+}
+.leftnav{
+  border: 1px solid #DBD4D1;
+}
+.link{
+  border: 1px solid grey;
+  background: #0c5460;
+  color: white;
+  text-align: center;
+}
+.link a{
+  color: white;
+}
+.pad0{
+  padding: 0px;
+}
+.link:hover{
+  border: 1px solid grey;
+  background: green;
+  color: white;
+  text-align: center;
+}
